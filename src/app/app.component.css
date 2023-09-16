@@ -1,0 +1,32 @@
+.toolbar-item-spacer {
+    flex: 1 1 auto;
+}
+
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+.app-sidenav {
+    width: 230px;
+}
+.app-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+} 
+
+.icon-and-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-and-text mat-icon {
+    margin-right: 8px; /* Adjust the margin as needed */
+    vertical-align: middle;
+  }
+  
+  .icon-and-text span {
+    vertical-align: middle;
+  }
+  
