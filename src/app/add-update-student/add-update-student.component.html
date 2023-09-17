@@ -1,0 +1,156 @@
+<h2>Add Student</h2>
+<div class="signin-content">
+  <mat-card>
+    <mat-card-content>
+      <div [formGroup]="form">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Name"
+                formControlName="name"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('name')">
+                Please enter student name
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="RollNo"
+                formControlName="rollNo"
+                required
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Address"
+                formControlName="address"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('address')">
+                Please enter student address
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Email Id"
+                formControlName="email"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('email')">
+                Please enter student email address
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Class XII(%)"
+                formControlName="classXII"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('classXII')">
+                Please enter student email address
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <mat-select placeholder="Course" required formControlName="course">
+                <mat-option> </mat-option>
+              </mat-select>
+              <mat-error *ngIf="isFieldInvalid('course')">
+                Please select course
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Father Name"
+                formControlName="fatherName"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('fatherName')">
+                Please enter student father name
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+                <input formControlName="dob" placeholder="Date Of Birth" matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              <mat-error *ngIf="isFieldInvalid('dob')">
+                Please enter student date of birth
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Phone No"
+                formControlName="phone"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('phone')">
+                Please enter student phone number
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Class XI(%)"
+                formControlName="classXI"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('classXI')">
+                Please enter student class xi marks
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <input
+                matInput
+                placeholder="Adhar No"
+                formControlName="adhar"
+                required
+              />
+              <mat-error *ngIf="isFieldInvalid('adhar')">
+                Please enter student adhar number
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <mat-form-field class="full-width-input">
+              <mat-select placeholder="Branch" required formControlName="branch">
+                <mat-option> </mat-option>
+              </mat-select>
+              <mat-error *ngIf="isFieldInvalid('branch')">
+                Please select branch
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <button mat-raised-button color="primary">Add Student</button>
+    </mat-card-content>
+  </mat-card>
+</div>

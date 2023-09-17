@@ -1,0 +1,28 @@
+.table-container {
+    max-height: 400px; /* Set the maximum height for vertical scrolling */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    overflow-x: auto; /* Enable horizontal scrolling when content overflows */
+    border: 1px solid #ccc; /* Add a border for clarity */
+    position: relative; /* Add relative positioning to contain the paginator */
+  }
+  
+  /* Adjust the table width to fit the content */
+  .mat-table {
+    width: 100%;
+  }
+  
+  /* Optional: Style the table header to make it sticky at the top */
+  .mat-header-row {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  /* Ensure paginator stays at 100% width */
+  .mat-paginator {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
