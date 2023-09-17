@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -49,6 +50,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatSelectModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatFormFieldModule,
     MatDatepickerModule,
     MatSortModule,
     MatTableModule,

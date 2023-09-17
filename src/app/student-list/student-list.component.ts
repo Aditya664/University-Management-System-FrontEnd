@@ -2,23 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { StudentService } from '../Services/student.service';
 import { MatTable } from '@angular/material/table';
 import { DatePipe } from '@angular/common';
-
-export class Student {
-  id!: number;
-  name!: string;
-  rollNo!: number;
-  address!: string;
-  email!: string;
-  classXIIPer!: number;
-  courseName!: string;
-  fatherName!: string;
-  dob!: Date;
-  phoneNo!: string;
-  classXPer!: number;
-  adharNo!: number;
-  branchName!: string;
-}
-
+import { Student } from '../Models/CommonModule';
 
 @Component({
   selector: 'app-student-list',

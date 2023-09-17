@@ -69,13 +69,13 @@
           <div class="col-md-6 col-lg-6">
             <mat-form-field class="full-width-input">
               <mat-select placeholder="Course" required formControlName="course">
-                <mat-option> </mat-option>
+                <mat-option *ngFor="let course of courseDropdown" [value]="course.courseName">{{ course.courseName }}</mat-option>
               </mat-select>
               <mat-error *ngIf="isFieldInvalid('course')">
                 Please select course
               </mat-error>
             </mat-form-field>
-          </div>
+          </div>          
           <div class="col-md-6 col-lg-6">
             <mat-form-field class="full-width-input">
               <input
@@ -91,7 +91,7 @@
           </div>
           <div class="col-md-6 col-lg-6">
             <mat-form-field class="full-width-input">
-                <input formControlName="dob" placeholder="Date Of Birth" matInput [matDatepicker]="picker">
+                <input formControlName="dob" required placeholder="Date Of Birth" matInput [matDatepicker]="picker">
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
               <mat-error *ngIf="isFieldInvalid('dob')">
@@ -141,7 +141,7 @@
           <div class="col-md-6 col-lg-6">
             <mat-form-field class="full-width-input">
               <mat-select placeholder="Branch" required formControlName="branch">
-                <mat-option> </mat-option>
+                <mat-option *ngFor="let branch of branchDropdown" [value]="branch.branchName">{{branch.branchName}} </mat-option>
               </mat-select>
               <mat-error *ngIf="isFieldInvalid('branch')">
                 Please select branch
@@ -150,7 +150,7 @@
           </div>
         </div>
       </div>
-      <button mat-raised-button color="primary">Add Student</button>
+      <button (click)="onSaveStudent()" mat-raised-button color="primary">Add Student</button>
     </mat-card-content>
   </mat-card>
 </div>

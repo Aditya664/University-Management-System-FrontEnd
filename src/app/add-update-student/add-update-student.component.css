@@ -1,6 +1,7 @@
 mat-card {
     margin: 2em auto;
     text-align: center;
+    max-height: 100%;
   }
   .signin-content {
     padding: 0px 1rem 1rem 1rem;
